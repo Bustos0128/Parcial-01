@@ -2,7 +2,6 @@ from .vidrio import Vidrio
 from .acabado_aluminio import AcabadoAluminio
 from .componente_adicional import ComponenteAdicional
 
-# Definir componentes adicionales globalmente
 componente_esquinas = ComponenteAdicional(nombre="Esquinas", precio_unitario=4310)
 componente_chapa = ComponenteAdicional(nombre="Chapa", precio_unitario=16200)
 
@@ -16,7 +15,7 @@ class Nave:
 
     def calcular_costo_aluminio(self) -> float:
         """Calcula el costo del aluminio de acuerdo al perímetro de la nave"""
-        perimetro = 2 * (self.ancho + self.alto)  # Suma de los lados
+        perimetro = 2 * (self.ancho + self.alto)  
         esquinas = componente_esquinas.calcular_costo_total(cantidad=4)  # 4 esquinas
         return perimetro * self.acabado.calcular_precio_cm_lineal() + esquinas
     

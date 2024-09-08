@@ -8,7 +8,6 @@ from models.acabado_aluminio import AcabadoAluminio
 from models.cotizacion import Cotizacion
 from models.componente_adicional import ComponenteAdicional
 
-# Crear una instancia de Console para Rich
 console = Console()
 
 def solicitar_datos_usuario():
@@ -122,7 +121,6 @@ def solicitar_datos_usuario():
     estilo_ventana = EstiloVentana(nombre=estilo, naves=naves)
     ventana = Ventana(ancho=ancho, alto=alto, estilo=estilo_ventana)
 
-    # Solicitar componentes adicionales
     esquina = ComponenteAdicional(nombre="Esquina", precio_unitario=4310)
     chapa = ComponenteAdicional(nombre="Chapa", precio_unitario=16200)
 

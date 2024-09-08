@@ -4,7 +4,6 @@ class Vidrio:
         self.esmerilado = esmerilado
 
     def calcular_precio_cm2(self) -> float:
-        """Calcula el costo del vidrio por cm², incluyendo el esmerilado si es necesario"""
         precios_base = {
             "Transparente": 8.25,
             "Bronce": 9.15,

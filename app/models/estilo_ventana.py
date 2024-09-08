@@ -8,8 +8,6 @@ class EstiloVentana:
 
     def distribuir_naves(self, ancho: float, alto: float) -> List[Nave]:
         """Distribuye las naves según el estilo de la ventana"""
-        # Aquí deberías aplicar la lógica específica para distribuir naves según el estilo
-        # Este es un ejemplo simple, deberías ajustar según la lógica real del estilo
         if self.nombre == "XO":
             return [Nave(tipo="O", ancho=ancho/2, alto=alto, vidrio=self.naves[0].vidrio, acabado=self.naves[0].acabado),
                     Nave(tipo="X", ancho=ancho/2, alto=alto, vidrio=self.naves[1].vidrio, acabado=self.naves[1].acabado)]
