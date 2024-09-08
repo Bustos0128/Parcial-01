@@ -83,9 +83,18 @@ def solicitar_datos_usuario():
         except ValueError:
             console.print("[red]Entrada inválida. Debe ingresar un número entero.[/red]")
 
-    # Solicitar opción de esmerilado
-    esmerilado_input = input("¿Desea vidrio esmerilado? (sí/no): ").strip().lower()
-    esmerilado = esmerilado_input == "sí"
+# Solicitar opción de esmerilado
+    while True:
+        try:
+            esmerilado_input = int(input("¿Desea vidrio esmerilado? (0 = No, 1 = Sí): "))
+            if esmerilado_input not in [0, 1]:
+                console.print("[red]Opción inválida. Debe ingresar 0 para No o 1 para Sí.[/red]")
+                continue
+            esmerilado = esmerilado_input == 1
+            break
+        except ValueError:
+            console.print("[red]Entrada inválida. Debe ingresar un número entero.[/red]")
+
     
     vidrio = Vidrio(tipo=tipo_vidrio, esmerilado=esmerilado)
 
