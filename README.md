@@ -13,11 +13,11 @@ Este proyecto consiste en el desarrollo de un sistema de cotización de ventanas
 ## Instalación
 1. Clona este repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/sistema-cotizacion-ventanas.git
+    git clone https://github.com/Bustos0128/Parcial-01.git
     ```
 2. Accede al directorio del proyecto:
     ```bash
-    cd sistema-cotizacion-ventanas
+    cd parcial1
     ```
 
 3. Instala las dependencias:
